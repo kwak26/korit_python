@@ -1,4 +1,7 @@
 #list
+from functools import singledispatchmethod
+from itertools import product
+
 fruits = ["apple", "banana", "cherry"] #문자열 리스트
 numbers = [1, 2, 3, 4, 5] #숫자 리스트
 bools = [True, True, False, True, False] #불리언 리스트
@@ -56,10 +59,43 @@ print(kor)
 numbers2 = sorted(numbers) #원본 변수에는 영향x, 새롭게 변수에 값을 할당
 
 #요소 존재 체크
-print("apple" in fruits)
+# print("apple" in fruits)
+#
+# #리스트 요소를 이어 붙이기
+# result = "-". join(list1)
+# print(result)
 
-#리스트 요소를 이어 붙이기
-result = "-". join(list1)
-print(result)
+#리스트실습
+cart = []
+#3개의 상품명을 입력받아서 cart에 추가
+#최종적으로 cart를 출력
+
+#최종적으로
+# product1 = input("추가할 상품 : ")
+# cart.append(product1)
 
 
+
+
+
+
+
+#튜플
+colors = ("red", "blue", "green")
+numbers = (1,2,3,5,9)
+mixed = ("pink", 1, True)
+single_tuple = ("hello",) #요소가 1개일 때는 꼭 ,를 붙여야 함
+alphabet = ("a", "a")
+
+#요소접근
+print(colors[1])
+
+#요소변경불가
+# colors[1])
+
+#index
+print(alphabet.index("b"))
+
+#튜플 언패킹
+a, b, c = colors
+print(a, b, c)
