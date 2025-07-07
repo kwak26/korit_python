@@ -34,3 +34,22 @@ sorted_numbers = sorted(numbers)
 print(sorted_numbers)
 print(type(sorted_numbers))
 
+for num in range(1,10):
+    if num == 5:
+        continue
+        print(num)
+
+#실습문제
+#1부타 100까지 짝수만 출력하기(range)
+#for i in range1, 100):
+#   if i % 2 == 0:
+#   print(i)
+
+for i in range(2, 101, 2):
+    print(i)
+
+#리스트이 합 구하기
+numbers = [10, 20, 30, 40, 50]
+total = 0
+
+
