@@ -3,6 +3,8 @@
 for 변수 in 반복할대상:
     반복할코드
 """
+from ctypes.wintypes import tagPOINT
+
 #리스트 순회
 fruits = ["사과", "바나나", "딸기", "포도"]
 
@@ -52,4 +54,20 @@ for i in range(2, 101, 2):
 numbers = [10, 20, 30, 40, 50]
 total = 0
 
+for num in numbers:
+    total += num
+print("리스트의 합:", total)
 
+for dan in range(1, 10):
+    for n in range(1, 10):
+        print(f"{dan} x {n} = {dan * n}")
+
+#평균구하기
+scores = [80, 90, 75, 88, 92]
+total = 0
+
+for score in scores:
+    total += score
+
+average = total / len(scores)
+print("평균점수:", average)
