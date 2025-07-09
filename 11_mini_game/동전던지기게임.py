@@ -40,8 +40,14 @@ while True:
 
     rounds_played += 1
 
-#5승 먼저 달성 시 게임 종료 (추가 옵션)
+    #5승 먼저 달성 시 게임 종료 (추가 옵션)
+    if user_wins == 5:
+        print(f"축하합니다! 사용자가 {user_wins}승으로 게임에서 승리했습니다")
+        break
 
+    elif computer_wins == 5:
+        print(f"아쉽네요... 컴퓨터가 {computer_wins}승으로 게임에서 패했습니다.")
+        break
 
 
 
